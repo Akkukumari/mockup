@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .chartBox{
+            width: 500px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    
+    <div class="mainbody">
+
+     <div class="firstbody">
+     <div class="firstfirstbody">
+        <div>
+            <img class="firstimg" src="https://media.licdn.com/dms/image/D5603AQG-pMCfQ8g08w/profile-displayphoto-shrink_800_800/0/1673172133589?e=2147483647&v=beta&t=epoLjUPZlwMPMn0HYqUWGIh915MabP6eGalfiEIPRxs"/>
+        </div>
+        <div>
+            <h2 class="firsth">Hi Mike,</h2>
+            <p class="firstp">welcome back</p>
+        </div>
+     </div>
+     <div class="firstsecondbody">
+     <h4 class="today">Today</h4>
+     <h2 class="total">$19,892</h2>
+     <p class="date">Account Balance</p>
+     <h4 class="all">$4,000</h4>
+     <p class="date">Year-to-Date Contributions</p>
+     <h4 class="all">$1,892</h4>
+     <p class="date">Total Interest</p>
+     <button class="firstbutton">I want to</button>
+     </div>
+     <div class="firstthirdbody">
+     <h2 class="recent">Recent Transitions</h2>
+     <p class="secondp">2020-08-07</p>
+     <h4 class="secondh">Withdrawal Transfer to Bank-XXX11</h4>
+     <p class="secondp">2020-08-07</p>
+     <h4 class="secondh">Withdrawal Transfer to Bank-XXX11</h4>
+     <p class="secondp">2020-08-07</p>
+     <h4 class="secondh">Withdrawal Transfer to Bank-XXX11</h4>
+    </div>
+     </div>
+     <hr class="hr">
+     <div class="secondbody">
+     <h4 class="secondfirst">Retirement Income</h4>
+     <h2 class="secondstart">Starting Year2056</h2>
+    <div class="secondupr">
+    <div>
+        <h2 class="money">$300,000</h2>
+        <h6 class="secp">My Goal</h6>
+    </div>
+    <div>
+        <h2 class="money">$59%</h2>
+        <h6 class="secp">Goal Archieved</h6>
+    </div>
+    <div>
+        <h2 class="money">$300</h2>
+        <h6 class="secp">Est. Monthly Income</h6>
+    </div>
+    </div>
+    <div class="secsec"><h4 class="contri">Contributions Overtime</h4>
+   <div class="chartBox">
+   <canvas id="myChart"></canvas>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script>
+   var ctx=document.getElementById('myChart').getContext('2d');
+   const gradientBg= ctx.createLinearGradient (0, 0, 0, 350);
+
+//    x0 = starting point of the gradient left. Horizontal
+//    x0 = starting point of the gradient top. Vertical
+
+   gradientBg.addColorStop(0.3,'lightblue');
+   gradientBg.addColorStop(0.3,'blue');
+   gradientBg.addColorStop(0.4,'navy');
+   var myChart= new Chart(ctx,{
+    type: 'bar',
+     data:{
+        labels:['10','20','30','40','50','60','70'],
+        datasets:[{
+            label: 'Employees',
+            label: 'Total Interest',
+            data: [4,5,6,7,8,9,12],
+            backgroundColor:gradientBg,
+        
+            borderWidth: 16
+        }]
+    },
+    options:{
+        scales:{
+            y:{
+                beginAtZero:true
+            }
+        }
+    }
+   })
+   </script>
+    </div>
+    <div class="seconddown">
+    <h3 class="secdown">How do I compare to my press?</h3>
+    <p class="secdownp">These numbers represent current goal achievement</p>
+    <div class="downlow">
+    <div>
+        <div class="downinner"> <h5 class="downh" >Age:Under 30</h5></div>
+        <div class="downinnerh"><h5 class="downp">Salary: K 20 K30</h5> </div>
+        <div class="downinnerp"> <h5 class="downhp">Gender: Male</h5></div>
+    </div>
+    <div class="wrap">
+        <div class="wrapper-center">
+            <div class="progress-bar">
+              <svg class="progress" data-progress="10" x="0px" y="0px" viewBox="0 0 80 80">
+                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <text class="value" x="50%" y="55%">0%</text>
+                </svg>
+            </div>
+          </div>
+          <div class="wrapper-center">
+            <div class="progress-bar">
+              <svg class="progress" data-progress="10" x="0px" y="0px" viewBox="0 0 80 80">
+                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <text class="value" x="50%" y="55%">0%</text>
+                </svg>
+            </div>
+          </div>
+          <div class="wrapper-center">
+            <div class="progress-bar">
+              <svg class="progress" data-progress="10" x="0px" y="0px" viewBox="0 0 80 80">
+                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                <text class="value" x="50%" y="55%">0%</text>
+                </svg>
+            </div>
+          </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <hr class="hr">
+     <div class="thirdbody">
+
+        <div class="upperbody">
+            <h4 class="thirdh">Retirement Strategy</h4>
+            <h5 class="thirdinner">Employee Contributer</h5>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+              <h5 class="thirdinner">Retirement Age</h5>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+             </div>
+             <h5 class="thirdinner">Employee Contributer</h5>
+             <h5 class="thirdinner">Interest Rate</h5>
+             <button class="update">Update</button>
+             <h5 class="lastinner">View Help Docs</h5>
+            </div>
+        <div class="lowerbody">
+            <h4 class="lowerh">Are you considering a</h4>
+            <h4 class="lowerhouse">Housing Advance?</h4>
+            <h5 class="lowerlimited">Limited time reduced interest</h5>
+            <h5 class="lowerlast">Learn More</h5>
+        </div>
+     </div>
+
+    </div>
+</body>
+</html>

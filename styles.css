@@ -1,0 +1,330 @@
+.mainbody{
+    display: flex;
+    width: 70%;
+    height: 760px;
+    background-color: white;
+    margin: auto;
+    border-radius: 14px;
+    margin-top: 100px;
+    gap: 45px;
+    border: 1px solid rgb(189, 186, 186);
+}
+.firstbody{
+/* border: 1px solid blue; */
+width: 28%;
+background-color: rgb(248, 241, 241);
+border-radius: 14px;
+}
+.firstfirstbody{
+    display: flex;
+ margin-left: 30px;
+ margin-top: 45px;
+}
+.firstimg{
+    border-radius: 60%;
+    width: 72%;
+    height: 70px;
+}
+.firsth{
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.firstp{
+    margin-top: 1px;
+    color: rgb(106, 104, 104);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+.firstsecondbody{
+    margin-left: 30px;
+    margin-top: 40px; 
+}
+.today{
+font-size: 18px;
+}
+.total{
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 1px;
+}
+.date{
+    color: rgb(106, 104, 104);  
+    font-weight: 500;
+    margin-top: 4px;
+}
+.all{
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+.hr{
+    display: none;
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+    .mainbody {
+        flex-direction: column;
+        height: max-content !important;
+     /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .firstbody, .thirdbody, .secondbody{
+width: 100% !important;
+    }
+    hr.hr{
+        border: 1px solid black;
+        width:100%;
+        display: inline-block !important;
+    }
+  }
+.firstthirdbody{
+    margin-left: 30px;
+    margin-top: 40px; 
+}
+.recent{
+    font-weight: 600;
+    font-size: 20px;
+}
+.secondp{
+    color: rgb(106, 104, 104);  
+    font-weight: 500;  
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.secondh{
+    font-weight: 700;  
+    margin-top: 4px;
+    font-size: 14px;
+}
+.firstbutton{
+    width: 35%;
+    height: 40px;
+    background-color: blue;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+.thirdbody{
+    /* border: 1px solid green; */
+    width: 28%;
+    border-radius: 14px;
+}
+.upperbody{
+    width: 76%;
+    margin: auto;
+    background-color: rgb(249, 246, 246);
+    height: 400px;
+    margin-top: 50px;
+}
+.thirdh{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.thirdinner{
+    padding-left: 30px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 60%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-left: 30px;
+    border-radius: 20px;
+  }
+  .update{
+    width: 60%;
+    height: 40px;
+    background-color: blue;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .lastinner{
+    margin-left: 60px;
+    font-weight: 600;
+    color: blue;
+  }
+  .lowerbody{
+    width: 76%;
+    margin: auto;
+    border-left: 3px solid blue;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .lowerh{
+    color: rgb(106, 104, 104);
+    font-weight: 600;
+    margin-bottom: 4px;
+    padding-left: 10px;
+  }
+  .lowerhouse{
+    margin-top: 4px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  .lowerlimited{
+    color: rgb(157, 155, 155);
+    padding-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .lowerlast{
+    padding-left: 10px;
+    font-weight: 600;
+    color: blue;
+    margin-top: 4px;
+  }
+
+  .secondbody{
+    /* border: 1px solid red; */
+    width: 40%;
+}
+
+.secondfirst{
+    color: blue;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+.secondstart{
+    margin-top: 4px;
+    margin-left: 30px;
+}
+.secondupr{
+    display: flex;
+    margin-left: 30px;
+    gap: 50px;
+}
+.money{
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+.secp{
+    color: rgb(157, 155, 155);
+    margin-top: 4px;
+}
+.contri{
+    margin-left: 30px;  
+}
+.secdown{
+    margin-left: 30px; 
+    margin-bottom: 4px;
+}
+.secdownp{
+    margin-left: 30px; 
+    color: rgb(157, 155, 155);
+    margin-top: 4px;
+    font-size: 12px;
+}
+.downlow{
+display: flex;
+}
+.downinner{
+    display: flex;
+    margin-left: 30px;
+    padding-bottom: 2px; 
+}
+.downh{
+    margin-bottom: 2px; 
+}
+.downp{
+    margin-top: 2px;
+    /* margin-bottom: 5px; */
+    margin-bottom: 2px; 
+}
+.downhp{
+    margin-top: 2px;
+    /* margin-bottom: 5px; */
+}
+.downinnerh{
+display: flex;
+margin-left: 30px;
+padding-top: 2px; 
+padding-bottom: 2px; 
+}
+.downinnerp{
+display: flex;
+margin-left: 30px;
+padding-top: 2px; 
+}
+
+
+   .wrap{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+   }
+  .wrapper-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+  }
+  .progress-bar {
+      /* background: #000; */
+      width: 75px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; 
+      position: relative;
+  }
+  .progress-bar:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      /* background: #444; */
+      z-index: 0;
+  }
+  /*===== The CSS =====*/
+  .progress{
+      width: 200px;
+      height: 280px;
+      z-index: 1;
+  }
+  .progress .track, .progress .fill{
+      /* fill: rgba(0, 0, 0, 0); */
+      fill: white;
+      stroke-width: 12;
+      transform: rotate(90deg)translate(0px, -80px);
+  }
+  .progress .track{
+      /* stroke: #20313e; */
+      stroke:rgb(8, 242, 164);
+  }
+  .progress .fill {
+    stroke:rgba(145, 233, 203, 0.982);
+      stroke-dasharray: 219.99078369140625;
+      stroke-dashoffset: -219.99078369140625;
+      transition: stroke-dashoffset 1s;
+  }
+  .progress .value {
+      fill: black;
+      text-anchor: middle;
+  }
+  .progress .text {
+      font-size: 50px;
+      fill: #fff;
+      text-anchor: middle;
+  }
